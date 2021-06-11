@@ -1,0 +1,159 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .menu ul {
+            padding: 0;
+            margin: 0;
+            display: table;
+            width: 80%;
+
+        }
+
+        .menu li {
+            display: table-cell;
+            background-color: #aaaaaa;
+            text-align: center;
+            position: relative;
+        }
+
+        .menu ul ul {
+            display: block;
+            position: absolute;
+            height: 0;
+            overflow: hidden;
+            transition: all 0.6s 0.6s ease-out;
+
+        }
+
+        .menu ul ul a {
+            background-color: #aaaaaa;
+        }
+
+        .menu ul ul li {
+            display: block;
+        }
+
+        .menu a {
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .menu a:hover {
+            background-color: #cccccc;
+        }
+
+        .menu li:hover ul {
+            height: 100px;
+        }
+
+        @media all and (max-width: 370px) {
+
+            .menu ul {
+                padding: 0;
+                margin: 0;
+                display: block;
+                width: 50%;
+
+
+            }
+
+            .menu li {
+                display: block;
+                background-color: #aaaaaa;
+                text-align: center;
+                position: relative;
+            }
+
+            .menu ul ul {
+                display: block;
+                position: absolute;
+                height: 0;
+                overflow: hidden;
+                transition: all 0.6s 0.6s ease-out;
+                margin-left: 168px;
+                margin-top: -1em;
+            }
+
+            .menu ul ul a {
+                background-color: #aaaaaa;
+            }
+
+            .menu ul ul li {
+                display: block;
+            }
+
+            .menu a {
+                color: black;
+                text-decoration: none;
+                display: block;
+                width: 50px;
+            }
+
+            .menu a:hover {
+                background-color: #cccccc;
+            }
+
+            .menu li:hover ul {
+                display: block;
+            }
+
+
+        }
+    </style>
+
+</head>
+<body>
+<nav class="menu">
+    <ul>
+        <li><a href="#">Понедельник</a>
+            <ul>
+                <li><a href="#">Завтрак</a></li>
+                <li><a href="#">Обед</a></li>
+                <li><a href="#">Ужин</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Вторник</a>
+            <ul>
+                <li><a href="#">Завтрак</a></li>
+                <li><a href="#">Обед</a></li>
+                <li><a href="#">Ужин</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Среда</a>
+            <ul>
+                <li><a href="#">Завтрак</a></li>
+                <li><a href="#">Обед</a></li>
+                <li><a href="#">Ужин</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Четверг</a>
+            <ul>
+                <li><a href="#">Завтрак</a></li>
+                <li><a href="#">Обед</a></li>
+                <li><a href="#">Ужин</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Пятница</a>
+            <ul>
+                <li><a href="#">Завтрак</a></li>
+                <li><a href="#">Обед</a></li>
+                <li><a href="#">Ужин</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Суббота</a>
+            <ul>
+                <li><a href="#">Завтрак</a></li>
+                <li><a href="#">Обед</a></li>
+                <li><a href="#">Ужин</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+</body>
+</html>
